@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black flex items-center justify-center min-h-screen">
+
+  <!-- MAIN CONTAINER -->
+  <div class="bg-[#0d1117] text-white w-[90%] max-w-5xl rounded-xl p-8 relative flex gap-10">
+
+    <!-- ❌ CLOSE BUTTON -->
+    <button onclick="goBack()" 
+      class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">
+      ✕
+    </button>
+
+    <!-- LEFT -->
+    <div class="w-1/2 space-y-6">
+      <h2 class="text-cyan-400 text-xl font-bold">ABOUT ME</h2>
+
+      <p class="text-gray-300 text-sm leading-relaxed">
+       I transform ambitious ideas into functional reality at the intersection of ECE and Web Development. From Arduino-powered IoT to scalable React/Flask applications, I build integrated digital experiences.
+        I am currently focused on leveraging the MERN stack to tackle impactful real-world projects. </p>
+
+      <!-- TAGS -->
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="tag">#embedded system</span>
+         <span class="tag">#iot</span>
+          <span class="tag">#microcontrollers</span>
+        <span class="tag">#javascript</span>
+        <span class="tag">#react.js</span>
+        <span class="tag">#node.js</span>
+        <span class="tag">#express.js</span>
+        <span class="tag">#mongoDB</span>
+        <span class="tag">#html</span>
+        <span class="tag">#tailwind css</span>
+        <span class="tag">#robotics</span>
+        <span class="tag">#github</span>
+        <span class="tag">#arduino</span>
+        <span class="tag">#figma</span>
+      </div>
+
+      <!-- MERN STACK -->
+      <div>
+        <h3 class="text-cyan-400 font-bold mt-6">MERN STACK</h3>
+
+        <div class="flex items-center gap-8 mt-6">
+
+          <!-- Mongo -->
+          <div class="group relative text-center">
+            <span class="tooltip">MongoDB</span>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              class="w-10 mx-auto transition-transform duration-200 group-hover:scale-125">
+            <p class="text-green-400 font-bold">M</p>
+          </div>
+
+          <!-- Express -->
+          <div class="group relative text-center">
+            <span class="tooltip">Express</span>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              class="w-10 mx-auto invert transition-transform duration-200 group-hover:scale-125">
+            <p class="font-bold">E</p>
+          </div>
+
+          <!-- React -->
+          <div class="group relative text-center">
+            <span class="tooltip">React</span>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              class="w-10 mx-auto transition-transform duration-200 group-hover:scale-125">
+            <p class="text-blue-400 font-bold">R</p>
+          </div>
+
+          <!-- Node -->
+          <div class="group relative text-center">
+            <span class="tooltip">Node.js</span>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="w-10 mx-auto transition-transform duration-200 group-hover:scale-125">
+            <p class="text-green-400 font-bold">N</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="w-1/2 flex items-center justify-center">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-3454633-2918522.png" 
+           class="w-full max-w-sm">
+    </div>
+
+  </div>
+
+  <!-- STYLES -->
+  <style>
+    .tag {
+      border: 1px solid #4b5563;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: #d1d5db;
+      transition: 0.2s;
+    }
+
+    .tag:hover {
+      transform: scale(1.1);
+      background: #1f2937;
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%) scale(0.8);
+      background: #111827;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      opacity: 0;
+      transition: 0.2s;
+      white-space: nowrap;
+    }
+
+    .group:hover .tooltip {
+      opacity: 1;
+      transform: translateX(-50%) scale(1.1);
+    }
+  </style>
+
+  <!-- JS -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
